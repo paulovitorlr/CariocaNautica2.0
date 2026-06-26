@@ -1,0 +1,15 @@
+<section id="contact" class="section contact">
+  <div class="container contact__inner">
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.subtitle }}</p>
+    <a
+      class="btn btn--large"
+      [href]="data.whatsappUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ data.ctaLabel }}
+    </a>
+    <p class="contact__phone">{{ data.whatsappPhone }}</p>
+  </div>
+</section>

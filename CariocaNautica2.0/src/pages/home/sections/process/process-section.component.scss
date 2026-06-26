@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+.process__timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+}
+
+.process__step {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+
+  @media (min-width: $breakpoint-lg) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 1.125rem;
+    top: 2.5rem;
+    bottom: 0;
+    width: 2px;
+    background: $color-border;
+
+    @media (min-width: $breakpoint-lg) {
+      left: calc(50% + 1.25rem);
+      top: 1.25rem;
+      bottom: auto;
+      width: calc(100% - 2.5rem);
+      height: 2px;
+    }
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.process__number {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-accent;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 1;
+}
+
+.process__content {
+  h3 {
+    margin: 0 0 0.375rem;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: $color-text-muted;
+    font-size: 0.875rem;
+  }
+}

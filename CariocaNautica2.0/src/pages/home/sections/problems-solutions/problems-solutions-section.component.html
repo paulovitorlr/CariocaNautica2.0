@@ -1,0 +1,24 @@
+<section id="problemas-solucoes" class="section problems-solutions">
+  <div class="container">
+    <header class="section-header">
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.subtitle }}</p>
+    </header>
+
+    <div class="problems-solutions__grid">
+      @for (item of data.items; track item.id) {
+        <article class="problems-solutions__card">
+          <div class="problems-solutions__problem">
+            <h3>{{ item.problem.title }}</h3>
+            <p>{{ item.problem.description }}</p>
+          </div>
+          <div class="problems-solutions__arrow" aria-hidden="true">→</div>
+          <div class="problems-solutions__solution">
+            <h3>{{ item.solution.title }}</h3>
+            <p>{{ item.solution.description }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

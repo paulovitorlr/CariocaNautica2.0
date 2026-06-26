@@ -1,0 +1,20 @@
+<section id="sobre" class="section about">
+  <div class="container about__grid">
+    <div class="about__content">
+      <header class="about__header">
+        <h2>{{ data.title }}</h2>
+        @if (data.subtitle) {
+          <p>{{ data.subtitle }}</p>
+        }
+      </header>
+      @for (paragraph of data.paragraphs; track paragraph) {
+        <p class="about__paragraph">{{ paragraph }}</p>
+      }
+    </div>
+    <div class="about__media">
+      <div class="placeholder-image" role="img" [attr.aria-label]="data.imageAlt">
+        Imagem placeholder
+      </div>
+    </div>
+  </div>
+</section>

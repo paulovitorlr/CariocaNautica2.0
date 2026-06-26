@@ -1,0 +1,22 @@
+<section id="feedbacks" class="section feedbacks">
+  <div class="container">
+    <header class="section-header">
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.subtitle }}</p>
+    </header>
+
+    <div class="feedbacks__grid">
+      @for (item of data.items; track item.id) {
+        <blockquote class="feedbacks__card">
+          <p class="feedbacks__quote">"{{ item.quote }}"</p>
+          <footer>
+            <cite>{{ item.author }}</cite>
+            @if (item.role) {
+              <span class="feedbacks__role">{{ item.role }}</span>
+            }
+          </footer>
+        </blockquote>
+      }
+    </div>
+  </div>
+</section>

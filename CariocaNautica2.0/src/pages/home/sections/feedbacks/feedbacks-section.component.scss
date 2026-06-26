@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.feedbacks {
+  background: $color-bg-muted;
+}
+
+.feedbacks__grid {
+  display: grid;
+  gap: 1.25rem;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feedbacks__card {
+  margin: 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+}
+
+.feedbacks__quote {
+  margin: 0 0 1rem;
+  font-style: italic;
+  color: $color-text;
+}
+
+.feedbacks__card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.feedbacks__card cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.feedbacks__role {
+  font-size: 0.8125rem;
+  color: $color-text-muted;
+}

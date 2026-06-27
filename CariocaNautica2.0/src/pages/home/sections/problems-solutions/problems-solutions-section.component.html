@@ -1,24 +1,91 @@
 <section id="problemas-solucoes" class="section problems-solutions">
+
   <div class="container">
+
     <header class="section-header">
       <h2>{{ data.title }}</h2>
       <p>{{ data.subtitle }}</p>
     </header>
 
-    <div class="problems-solutions__grid">
-      @for (item of data.items; track item.id) {
-        <article class="problems-solutions__card">
-          <div class="problems-solutions__problem">
-            <h3>{{ item.problem.title }}</h3>
-            <p>{{ item.problem.description }}</p>
-          </div>
-          <div class="problems-solutions__arrow" aria-hidden="true">→</div>
-          <div class="problems-solutions__solution">
-            <h3>{{ item.solution.title }}</h3>
-            <p>{{ item.solution.description }}</p>
-          </div>
-        </article>
-      }
+    <div class="carousel">
+
+      <button
+        type="button"
+        class="carousel__button carousel__button--prev"
+        (click)="previous()"
+        aria-label="Anterior">
+
+        &#10094;
+
+      </button>
+
+      <div class="carousel__viewport">
+
+        <div
+          class="carousel__track"
+          [style.transform]="trackTransform">
+
+          @for (item of data.items; track item.id) {
+
+            <article class="product-card">
+
+              <img
+                class="product-card__image"
+                [src]="item.image"
+                [alt]="item.description">
+
+              <div class="product-card__stars">
+
+                @for (star of getStars(item.rating); track $index) {
+                  <span>★</span>
+                }
+
+              </div>
+
+              <p class="product-card__description">
+                {{ item.description }}
+              </p>
+
+              <button type="button" class="product-card__cta">
+                {{ item.button }}
+              </button>
+
+            </article>
+
+          }
+
+        </div>
+
+      </div>
+
+      <button
+        type="button"
+        class="carousel__button carousel__button--next"
+        (click)="next()"
+        aria-label="Próximo">
+
+        &#10095;
+
+      </button>
+
     </div>
+
+    <div class="carousel__dots">
+
+      @for (dot of dots; track dot) {
+
+        <button
+          type="button"
+          class="carousel__dot"
+          [class.carousel__dot--active]="dot === currentIndex"
+          (click)="goTo(dot)"
+          [attr.aria-label]="'Ir para o grupo ' + (dot + 1)">
+        </button>
+
+      }
+
+    </div>
+
   </div>
+
 </section>

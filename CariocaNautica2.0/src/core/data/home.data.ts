@@ -7,9 +7,9 @@ import { ProblemsSolutionsSection } from '@core/interfaces/problem-solution.inte
 import { ProcessSection } from '@core/interfaces/process-step.interface';
 
 export const HERO_DATA: Hero = {
-  headline: 'Estofados náuticos sob medida para embarcações de luxo',
+  headline: 'Design, qualidade e resistência para quem vive o mar.',
   subtitle:
-    'Acabamento premium, materiais resistentes ao sol e à maresia — feitos para durar no mar com conforto e elegância.',
+    'Mais conforto para quem navega, mais valorização para sua embarcação e mais tranquilidade para aproveitar cada momento.',
   imageAlt: 'Interior de embarcação com estofamento náutico premium',
   cta: {
     label: 'Venha fazer seu orçamento com a gente',
@@ -19,43 +19,38 @@ export const HERO_DATA: Hero = {
 };
 
 export const PROBLEMS_SOLUTIONS_DATA: ProblemsSolutionsSection = {
-  title: 'Problemas comuns — e como a Carioca Náutica resolve',
-  subtitle: 'Identificamos o que desgasta seu estofamento e entregamos soluções pensadas para o ambiente náutico.',
+  title: 'Best Sellers',
+  subtitle: 'Os produtos mais procurados da Carioca Náutica.',
   items: [
     {
-      id: 'desbotado',
-      problem: {
-        title: 'Desbotado pelo sol',
-        description: 'Tecidos expostos perdem cor e ficam opacos com o tempo.',
-      },
-      solution: {
-        title: 'Tecidos UV-resistentes',
-        description: 'Materiais selecionados para resistir à radiação solar e manter a cor por mais tempo.',
-      },
+      id: '1',
+      image: 'assets/images/produto-1.jpg',
+      rating: 5,
+      description: 'Piso Náutico EVA Premium com proteção UV.',
+      button: 'Tenho Interesse'
     },
     {
-      id: 'escorregadio',
-      problem: {
-        title: 'Escorregadio quando molhado',
-        description: 'Superfícies úmidas comprometem segurança e conforto a bordo.',
-      },
-      solution: {
-        title: 'Acabamento antiderrapante',
-        description: 'Espumas e revestimentos com grip adequado para uso em áreas molhadas.',
-      },
+      id: '2',
+      image: 'assets/images/produto-2.jpg',
+      rating: 5,
+      description: 'Acabamento antiderrapante e impermeável.',
+      button: 'Tenho Interesse'
     },
     {
-      id: 'descolando',
-      problem: {
-        title: 'Descolando e desgastando',
-        description: 'Colagem fraca e costuras mal feitas encurtam a vida útil do estofamento.',
-      },
-      solution: {
-        title: 'Fabricação sob medida',
-        description: 'Corte preciso, colagem industrial e costura reforçada para máxima durabilidade.',
-      },
+      id: '3',
+      image: 'assets/images/produto-3.jpg',
+      rating: 4,
+      description: 'Material resistente à água salgada.',
+      button: 'Tenho Interesse'
     },
-  ],
+    {
+      id: '4',
+      image: 'assets/images/produto-4.jpg',
+      rating: 5,
+      description: 'Fácil instalação e fácil manutenção.',
+      button: 'Tenho Interesse'
+    }
+  ]
 };
 
 export const PROCESS_DATA: ProcessSection = {

@@ -24,7 +24,7 @@ export const PROBLEMS_SOLUTIONS_DATA: ProblemsSolutionsSection = {
   items: [
     {
       id: '1',
-      image: 'assets/images/produto-1.jpg',
+      image: 'assets/images/DSC01280.JPG.jpeg',
       rating: 5,
       description: 'Piso Náutico EVA Premium com proteção UV.',
       button: 'Tenho Interesse'
@@ -124,11 +124,19 @@ export const ABOUT_DATA: About = {
 };
 
 export const CONTACT_DATA: Contact = {
-  title: 'Pronto para renovar sua embarcação?',
-  subtitle: 'Fale conosco e receba um orçamento personalizado sem compromisso.',
-  ctaLabel: 'Solicitar orçamento via WhatsApp',
-  whatsappUrl: 'https://wa.me/5521999999999',
-  whatsappPhone: '(21) 99999-9999',
+  title: 'Solicite seu orçamento sem compromisso',
+  subtitle:
+    'Preencha o formulário abaixo e nossa equipe entrará em contato para entender sua necessidade e elaborar um orçamento personalizado.',
+
+  form: {
+    namePlaceholder: 'Seu nome',
+    emailPlaceholder: 'Seu e-mail',
+    phonePlaceholder: '(00) 00000-0000',
+    messagePlaceholder:
+      'Conte um pouco sobre sua embarcação e o serviço que deseja.',
+
+    submitLabel: 'Solicitar orçamento',
+  },
 };
 
 export const FOOTER_DATA: Footer = {

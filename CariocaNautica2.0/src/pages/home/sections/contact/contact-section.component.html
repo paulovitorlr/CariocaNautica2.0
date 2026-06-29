@@ -1,15 +1,59 @@
 <section id="contact" class="section contact">
-  <div class="container contact__inner">
-    <h2>{{ data.title }}</h2>
-    <p>{{ data.subtitle }}</p>
-    <a
-      class="btn btn--large"
-      [href]="data.whatsappUrl"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ data.ctaLabel }}
-    </a>
-    <p class="contact__phone">{{ data.whatsappPhone }}</p>
+
+  <div class="container">
+
+    <div class="contact__card">
+
+      <div class="contact__content">
+
+        <h2>{{ data.title }}</h2>
+
+        <p>
+          {{ data.subtitle }}
+        </p>
+
+        <ul class="contact__benefits">
+          <li>✓ Atendimento personalizado</li>
+          <li>✓ Orçamento sem compromisso</li>
+          <li>✓ Equipe especializada</li>
+        </ul>
+
+      </div>
+
+      <form class="contact__form">
+
+        <input
+          type="text"
+          [placeholder]="data.form.namePlaceholder"
+        >
+
+        <input
+          type="email"
+          [placeholder]="data.form.emailPlaceholder"
+        >
+
+        <input
+          type="tel"
+          [placeholder]="data.form.phonePlaceholder"
+        >
+
+        <textarea
+          rows="6"
+          [placeholder]="data.form.messagePlaceholder">
+        </textarea>
+
+        <button
+          class="btn btn--large"
+          type="submit">
+
+          {{ data.form.submitLabel }}
+
+        </button>
+
+      </form>
+
+    </div>
+
   </div>
+
 </section>

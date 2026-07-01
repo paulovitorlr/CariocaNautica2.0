@@ -7,6 +7,8 @@ import { HeroSectionComponent } from './sections/hero/hero-section.component';
 import { ProblemsSolutionsSectionComponent } from './sections/problems-solutions/problems-solutions-section.component';
 import { ProcessSectionComponent } from './sections/process/process-section.component';
 import { SegmentsSectionComponent } from './sections/segments/segments-section.component';
+import { NavbarComponent } from './sections/navbar/navbar.component';
+
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,8 @@ import { SegmentsSectionComponent } from './sections/segments/segments-section.c
     AboutSectionComponent,
     ContactSectionComponent,
     FooterSectionComponent,
-    SegmentsSectionComponent
+    SegmentsSectionComponent,
+    NavbarComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -1,0 +1,64 @@
+<header class="navbar">
+
+  <div class="container navbar__content">
+
+    <div class="navbar__logo">
+      <a href="#">
+        <img
+          [src]="data.logo"
+          [alt]="data.logoAlt">
+      </a>
+    </div>
+
+    <button
+      class="navbar__toggle"
+      (click)="toggleMenu()"
+      aria-label="Abrir menu">
+
+      ☰
+
+    </button>
+
+    <nav
+      class="navbar__nav"
+      [class.navbar__nav--open]="menuOpen">
+
+      @for (item of data.items; track item.label) {
+
+        <a
+          class="navbar__link"
+          [href]="item.target"
+          (click)="closeMenu()">
+
+          {{ item.label }}
+
+        </a>
+
+      }
+
+      <a
+        class="btn navbar__mobile-cta"
+        [href]="ctaHref"
+        (click)="closeMenu()">
+
+        {{ data.cta.label }}
+
+      </a>
+
+    </nav>
+
+    <div class="navbar__actions">
+
+      <a
+        class="btn"
+        [href]="ctaHref">
+
+        {{ data.cta.label }}
+
+      </a>
+
+    </div>
+
+  </div>
+
+</header>

@@ -6,15 +6,47 @@ import { Hero } from '@core/interfaces/hero.interface';
 import { ProblemsSolutionsSection } from '@core/interfaces/problem-solution.interface';
 import { ProcessSection } from '@core/interfaces/process-step.interface';
 import { SegmentsSection } from '@core/interfaces/segments.interface';
+import { Navbar } from '@core/interfaces/navbar.interface';
 
 export const HERO_DATA: Hero = {
   headline: 'Design, qualidade e resistência para quem vive o mar.',
   subtitle:
     'Mais conforto para quem navega, mais valorização para sua embarcação e mais tranquilidade para aproveitar cada momento.',
-    image: 'assets/images/oceanwallpaper.jpg',
+    image: 'assets/images/DSC01287.JPG.jpeg',
   imageAlt: 'imagem do mar',
   cta: {
     label: 'Venha fazer seu orçamento com a gente',
+    action: 'scroll',
+    target: '#contact',
+  },
+};
+
+export const NAVBAR_DATA: Navbar = {
+  logo: 'assets/images/logo.png',
+  logoAlt: 'Carioca Náutica',
+
+  items: [
+    {
+      label: 'Aplicações',
+      target: '#segments',
+    },
+    {
+      label: 'Avaliações',
+      target: '#feedbacks',
+    },
+    {
+      label: 'Sobre',
+      target: '#sobre',
+    },
+    {
+      label: 'Contato',
+      
+      target: '#contact',
+    },
+  ],
+
+  cta: {
+    label: 'Faça seu orçamento',
     action: 'scroll',
     target: '#contact',
   },
@@ -26,28 +58,28 @@ export const PROBLEMS_SOLUTIONS_DATA: ProblemsSolutionsSection = {
   items: [
     {
       id: '1',
-      image: 'assets/images/DSC01280.JPG.jpeg',
+      image: 'assets/images/BestSeller1.jpeg',
       rating: 5,
       description: 'Piso Náutico EVA Premium com proteção UV.',
       button: 'Tenho Interesse'
     },
     {
       id: '2',
-      image: 'assets/images/produto-2.jpg',
+      image: 'assets/images/BestSeller2.jpeg',
       rating: 5,
       description: 'Acabamento antiderrapante e impermeável.',
       button: 'Tenho Interesse'
     },
     {
       id: '3',
-      image: 'assets/images/produto-3.jpg',
+      image: 'assets/images/BestSeller3.jpeg',
       rating: 4,
       description: 'Material resistente à água salgada.',
       button: 'Tenho Interesse'
     },
     {
       id: '4',
-      image: 'assets/images/produto-4.jpg',
+      image: 'assets/images/BestSeller4.jpeg',
       rating: 5,
       description: 'Fácil instalação e fácil manutenção.',
       button: 'Tenho Interesse'
@@ -68,7 +100,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
       title: 'Lanchas',
       description:
         'Pisos EVA personalizados para lanchas de todos os portes.',
-      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      image: 'assets/images/Aplicacoes1.jpeg',
       icon: '🚤',
       link: '#contato',
       featured: true,
@@ -79,7 +111,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
       title: 'Jet Skis',
       description:
         'Alta aderência e acabamento premium.',
-      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      image: 'assets/images/Aplicacoes2.jpeg',
       icon: '🌊',
       link: '#contato',
       featured: true,
@@ -90,7 +122,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
       title: 'Catamarãs',
       description:
         'Projetos sob medida para embarcações de grande porte.',
-      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      image: 'assets/images/Aplicacoes3.jpeg',
       icon: '⛵',
       link: '#contato',
       button: 'Saiba mais'
@@ -100,7 +132,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
       title: 'Pesqueiros',
       description:
         'Resistência, conforto e segurança para pesca esportiva.',
-      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      image: 'assets/images/Aplicacoes4.jpeg',
       icon: '🎣',
       link: '#contato',
       button: 'Saiba mais'
@@ -177,7 +209,8 @@ export const ABOUT_DATA: About = {
     'A Carioca Náutica nasceu da paixão pelo mar e pelo cuidado com cada detalhe a bordo. Há anos atendemos proprietários de embarcações de luxo que exigem conforto, durabilidade e acabamento impecável.',
     'Combinamos materiais de alta performance com fabricação sob medida, garantindo que cada projeto reflita o estilo do cliente e as exigências do ambiente marítimo.',
   ],
-  imageAlt: 'Equipe Carioca Náutica em trabalho de estofamento náutico',
+  image: 'assets/images/Aplicacoes2.jpeg',
+  imageAlt: 'Equipe Carioca Náutica em trabalho de estofamento náutico'
 };
 
 export const CONTACT_DATA: Contact = {

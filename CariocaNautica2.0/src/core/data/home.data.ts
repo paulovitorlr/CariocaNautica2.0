@@ -5,12 +5,14 @@ import { Footer } from '@core/interfaces/footer.interface';
 import { Hero } from '@core/interfaces/hero.interface';
 import { ProblemsSolutionsSection } from '@core/interfaces/problem-solution.interface';
 import { ProcessSection } from '@core/interfaces/process-step.interface';
+import { SegmentsSection } from '@core/interfaces/segments.interface';
 
 export const HERO_DATA: Hero = {
   headline: 'Design, qualidade e resistência para quem vive o mar.',
   subtitle:
     'Mais conforto para quem navega, mais valorização para sua embarcação e mais tranquilidade para aproveitar cada momento.',
-  imageAlt: 'Interior de embarcação com estofamento náutico premium',
+    image: 'assets/images/oceanwallpaper.jpg',
+  imageAlt: 'imagem do mar',
   cta: {
     label: 'Venha fazer seu orçamento com a gente',
     action: 'scroll',
@@ -51,6 +53,61 @@ export const PROBLEMS_SOLUTIONS_DATA: ProblemsSolutionsSection = {
       button: 'Tenho Interesse'
     }
   ]
+};
+
+export const SEGMENTS_DATA: SegmentsSection = {
+
+  title: 'Aplicações',
+
+  subtitle:
+    'Soluções personalizadas para diferentes tipos de embarcações.',
+
+  items: [
+
+    {
+      title: 'Lanchas',
+      description:
+        'Pisos EVA personalizados para lanchas de todos os portes.',
+      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      icon: '🚤',
+      link: '#contato',
+      featured: true,
+      button: 'Saiba mais'
+    },
+
+    {
+      title: 'Jet Skis',
+      description:
+        'Alta aderência e acabamento premium.',
+      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      icon: '🌊',
+      link: '#contato',
+      featured: true,
+      button: 'Saiba mais'
+    },
+
+    {
+      title: 'Catamarãs',
+      description:
+        'Projetos sob medida para embarcações de grande porte.',
+      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      icon: '⛵',
+      link: '#contato',
+      button: 'Saiba mais'
+    },
+
+    {
+      title: 'Pesqueiros',
+      description:
+        'Resistência, conforto e segurança para pesca esportiva.',
+      image: 'https://placehold.co/1200x800/e5e7eb/6b7280?text=Imagem',
+      icon: '🎣',
+      link: '#contato',
+      button: 'Saiba mais'
+    }
+
+  ]
+
 };
 
 export const PROCESS_DATA: ProcessSection = {

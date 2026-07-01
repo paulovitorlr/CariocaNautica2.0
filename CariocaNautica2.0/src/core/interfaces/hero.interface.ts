@@ -7,6 +7,7 @@ export interface HeroCta {
 export interface Hero {
   headline: string;
   subtitle: string;
+  image: string;
   imageAlt: string;
   cta: HeroCta;
 }

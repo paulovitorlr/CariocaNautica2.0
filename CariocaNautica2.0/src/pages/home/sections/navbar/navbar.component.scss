@@ -2,9 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #fff;
+  background: rgba(247,244,239,.85);
   border-bottom: 1px solid #ececec;
 
+  
   &__content {
     display: flex;
     align-items: center;
@@ -26,13 +27,13 @@
 
   &__link {
     text-decoration: none;
-    color: #222;
+    color: #2A2A2A;
     font-weight: 500;
     transition: .3s;
   }
 
   &__link:hover {
-    color: #0b6ef3;
+    color: #163A4D;
   }
 
   &__toggle {
@@ -45,6 +46,13 @@
 
   &__mobile-cta {
     display: none;
+  }
+
+  .btn{
+    background: #163A4D;
+    &:Hover{
+      background: #204D65;
+    }
   }
 }
 

@@ -1,11 +1,23 @@
 @use 'variables' as *;
+.process{
+  background-color: #FFFFFF;
 
+  h2{
+    font-family: $Text-Principal;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 700;
+  }
+  p{
+    font-family: $Text-Secundario;
+  }
+}
 .process__timeline {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   gap: 0;
+  
 
   @media (min-width: $breakpoint-lg) {
     grid-template-columns: repeat(5, 1fr);
@@ -33,7 +45,7 @@
     top: 2.5rem;
     bottom: 0;
     width: 2px;
-    background: $color-border;
+    background: #D8D4CD;
 
     @media (min-width: $breakpoint-lg) {
       left: calc(50% + 1.25rem);
@@ -56,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $color-accent;
+  background: #34596F;
   color: #fff;
   border-radius: 50%;
   font-weight: 600;

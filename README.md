@@ -74,7 +74,7 @@ Este repositório acompanha a evolução da aplicação desde sua estrutura inic
 - [x] Estrutura inicial do projeto
 - [x] Arquitetura da aplicação
 - [x] Layout inicial
-- [ ] Responsividade completa
+- [x] Responsividade completa
 - [ ] Integração do formulário
 - [ ] SEO
 - [ ] Otimizações de performance

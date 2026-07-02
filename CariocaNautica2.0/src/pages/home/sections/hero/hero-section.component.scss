@@ -1,9 +1,15 @@
 @use 'variables' as *;
 
+.hero {
+  background-color: #F7F4EF;
+  color: #1D1D1D;
+}
 .hero__grid {
   display: grid;
   gap: $section-gap;
   align-items: center;
+  
+
 
   @media (min-width: $breakpoint-lg) {
     grid-template-columns: 1fr 1fr;
@@ -11,20 +17,33 @@
 }
 
 .hero__content {
+  
   h1 {
     margin: 0 0 1rem;
     font-size: clamp(1.75rem, 5vw, 2.75rem);
     line-height: 1.2;
     font-weight: 700;
+     font-family: $Text-Principal;
+  }
+
+  p{
+    font-family: $Text-Secundario;
   }
 }
 
 .hero__subtitle {
   margin: 0 0 1.5rem;
-  color: $color-text-muted;
+  color: #5F5F5F;
   font-size: 1.0625rem;
   max-width: 32rem;
 }
+
+.btn{
+    background-color: #163A4D;
+    &:hover{
+      color: #204D65;
+    }
+  }
 
 .hero__media .placeholder-image {
   aspect-ratio: 16 / 10;

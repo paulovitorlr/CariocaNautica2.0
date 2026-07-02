@@ -1,8 +1,8 @@
 @use 'variables' as *;
 
 .footer {
-  background: $color-accent;
-  color: #fff;
+  background: #163A4D;
+  color: #FFFFFF;
 }
 
 .footer__grid {
@@ -23,6 +23,7 @@
   }
 
   p {
+    font-family: $Text-Secundario;
     margin: 0 0 0.375rem;
   }
 

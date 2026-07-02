@@ -12,7 +12,7 @@ export const HERO_DATA: Hero = {
   headline: 'Design, qualidade e resistência para quem vive o mar.',
   subtitle:
     'Mais conforto para quem navega, mais valorização para sua embarcação e mais tranquilidade para aproveitar cada momento.',
-    image: 'assets/images/DSC01287.JPG.jpeg',
+    image: 'assets/images/Aplicacoes1.jpeg',
   imageAlt: 'imagem do mar',
   cta: {
     label: 'Venha fazer seu orçamento com a gente',
@@ -22,7 +22,7 @@ export const HERO_DATA: Hero = {
 };
 
 export const NAVBAR_DATA: Navbar = {
-  logo: 'assets/images/logo.png',
+  logo: 'assets/images/PIRATA_CARECA.png',
   logoAlt: 'Carioca Náutica',
 
   items: [
@@ -206,10 +206,13 @@ export const ABOUT_DATA: About = {
   title: 'Sobre a Carioca Náutica',
   subtitle: 'Tradição e expertise em estofamento náutico no Rio de Janeiro.',
   paragraphs: [
-    'A Carioca Náutica nasceu da paixão pelo mar e pelo cuidado com cada detalhe a bordo. Há anos atendemos proprietários de embarcações de luxo que exigem conforto, durabilidade e acabamento impecável.',
-    'Combinamos materiais de alta performance com fabricação sob medida, garantindo que cada projeto reflita o estilo do cliente e as exigências do ambiente marítimo.',
+    'Há 5 anos no mercado, a Carioca Náutica é representante oficial e técnica da Kapazi Náutica no Rio de Janeiro. Nossa equipe é treinada e qualificada diretamente pela Kapazi, o que garante o mesmo padrão de qualidade em cada projeto, do molde ao acabamento final. Estamos prontos pra atender qualquer tipo de embarcação, seja veleiro, jet ski, catamarã, lancha ou iate.',
+    'Trabalhamos com diversos materiais, entre linhas externas e internas, sempre sob medida e com personalizações ilimitadas. Do desenho ao friso, o piso é feito do jeito que você imaginar. Convidamos você a conhecer, aqui no site, os materiais que já expusemos e instalamos em embarcações por todo o Brasil.',
+    'Nossa presença já foi validada nas maiores vitrines náuticas do país. Nossos pisos estiveram expostos em mais de 10 estaleiros na Rio Boat Show 2026, e a nossa equipe da Carioca Náutica foi a responsável pelo molde e pela instalação de 5 embarcações apresentadas na feira.',
+    'Mais do que representantes técnicos, somos apaixonados pelo que fazemos. Por isso, estamos ao seu lado em cada etapa, do primeiro contato ao molde, da venda à instalação, e também no pós-venda.',
+    'Fale com a gente e transforme a sua embarcação.',
   ],
-  image: 'assets/images/Aplicacoes2.jpeg',
+  image: 'assets/images/Sobre.jpeg',
   imageAlt: 'Equipe Carioca Náutica em trabalho de estofamento náutico'
 };
 

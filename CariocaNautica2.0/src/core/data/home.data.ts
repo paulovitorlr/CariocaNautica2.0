@@ -58,30 +58,30 @@ export const PROBLEMS_SOLUTIONS_DATA: ProblemsSolutionsSection = {
   items: [
     {
       id: '1',
-      image: 'assets/images/BestSeller1.jpeg',
+      image: 'assets/images/BestSeller1.JPG',
       rating: 5,
-      description: 'Piso Náutico EVA Premium com proteção UV.',
+      description: 'Durabilidade, qualidade e exclusividade: o Thermo Deck Beach, disponível apenas conosco',
       button: 'Tenho Interesse'
     },
     {
       id: '2',
       image: 'assets/images/BestSeller2.jpeg',
       rating: 5,
-      description: 'Acabamento antiderrapante e impermeável.',
+      description: 'O Kap Boat chegou com impressão em 4K, infinitas opções de layout e ótimo custo-benefício',
       button: 'Tenho Interesse'
     },
     {
       id: '3',
       image: 'assets/images/BestSeller3.jpeg',
       rating: 4,
-      description: 'Material resistente à água salgada.',
+      description: 'O EVA Soft Tech Premium tem lixamento especial que deixa a textura aveludada, com infinitas opções de personalização, o piso náutico da Kapazi Náutica.',
       button: 'Tenho Interesse'
     },
     {
       id: '4',
-      image: 'assets/images/BestSeller4.jpeg',
+      image: 'assets/images/BestSeller4.JPG',
       rating: 5,
-      description: 'Fácil instalação e fácil manutenção.',
+      description: 'Teka sintética com fácil manutenção e acabamento premium: o Thermo Deck Beach, da Kapazi Náutica.',
       button: 'Tenho Interesse'
     }
   ]
@@ -99,7 +99,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
     {
       title: 'Lanchas',
       description:
-        'Pisos EVA personalizados para lanchas de todos os portes.',
+        'Pisos personalizados para lanchas de todos os portes.',
       image: 'assets/images/Aplicacoes1.jpeg',
       icon: '🚤',
       link: '#contato',
@@ -119,7 +119,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
     },
 
     {
-      title: 'Catamarãs',
+      title: 'Veleiros',
       description:
         'Projetos sob medida para embarcações de grande porte.',
       image: 'assets/images/Aplicacoes3.jpeg',
@@ -129,7 +129,7 @@ export const SEGMENTS_DATA: SegmentsSection = {
     },
 
     {
-      title: 'Pesqueiros',
+      title: 'Catamarãs',
       description:
         'Resistência, conforto e segurança para pesca esportiva.',
       image: 'assets/images/Aplicacoes4.jpeg',
@@ -169,7 +169,7 @@ export const PROCESS_DATA: ProcessSection = {
     {
       order: 5,
       title: 'Entrega',
-      description: 'Instalamos ou entregamos pronto para uso, com garantia de satisfação.',
+      description: 'Nossa equipe realiza a instalação, conforme as certificações da Kapazi Náutica, garantindo a satisfação do cliente',
     },
   ],
 };
@@ -181,23 +181,23 @@ export const FEEDBACKS_DATA: FeedbacksSection = {
     {
       id: 'feedback-1',
       quote:
-        'O estofamento ficou impecável. Resistente ao sol e muito mais confortável do que o original.',
-      author: 'Ricardo M.',
-      role: 'Proprietário de lancha 42 pés',
+        'Já fiz 3 lanchas com a Carioca Náutica e não troco por nada. Eles cuidam de tudo, do molde até a instalação, sem eu precisar me preocupar com nada. O pós venda também é excelente, qualquer dúvida ou ajuste eles resolvem rápido. E as condições de pagamento facilitaram muito, consegui parcelar do jeito que fazia sentido pra mim. Recomendo de olhos fechados.',
+      author: 'RQ Passeios',
+      role: 'Proprietário de 3 lanchas',
     },
     {
       id: 'feedback-2',
       quote:
-        'Atendimento excelente do orçamento à instalação. Recomendo para quem busca qualidade náutica.',
-      author: 'Ana Paula S.',
-      role: 'Proprietária de veleiro',
+        'Importei um catamarã e um veleiro, mas na hora de pensar no piso não pensei duas vezes em fechar com a Carioca Náutica. O processo é incrível do início ao fim, e o Thermo Deck Beach mudou completamente a cara das duas embarcações. Fora que a durabilidade é impressionante, mesmo com o uso constante no mar. Depois dessa experiência, não recomendo outra empresa pra quem quer qualidade de verdade.',
+      author: 'Marcelo S.',
+      role: 'Proprietário de veleiro e catamarã',
     },
     {
       id: 'feedback-3',
       quote:
-        'Renovamos todos os assentos e o resultado superou as expectativas. Acabamento de primeira.',
-      author: 'Carlos E.',
-      role: 'Capitão de iate',
+        'O que mais me impressionou na Carioca Náutica foi o nível de conhecimento técnico da equipe. Eles entendem de verdade sobre piso náutico e conseguem indicar a melhor solução pra cada tipo de embarcação e uso. A qualidade do material é outro ponto que faz toda a diferença, dá pra sentir o acabamento premium assim que pisa. Uma empresa que domina o que faz do início ao fim',
+      author: 'Felipe S.',
+      role: 'Proprietário de lancha 40 pés',
     },
   ],
 };
@@ -234,11 +234,11 @@ export const CONTACT_DATA: Contact = {
 
 export const FOOTER_DATA: Footer = {
   brandName: 'Carioca Náutica',
-  tagline: 'Estofamento náutico sob medida',
-  phone: '(21) 99999-9999',
-  email: 'contato@cariocanautica.com.br',
+  tagline: 'Revestimento náutico sob medida',
+  phone: '(21) 96925-2525',
+  email: 'cariocanauticaj@gmail.com',
   socialLinks: [
-    { label: 'Instagram', url: 'https://instagram.com' },
+    { label: 'Instagram', url: 'https://www.instagram.com/cariocanautica/' },
     { label: 'Facebook', url: 'https://facebook.com' },
   ],
   navLinks: [

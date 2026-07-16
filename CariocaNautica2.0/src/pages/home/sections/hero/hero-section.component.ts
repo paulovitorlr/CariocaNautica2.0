@@ -12,6 +12,10 @@ export class HeroSectionComponent {
   @Input() data: Hero = HERO_DATA;
 
   get ctaHref(): string {
-    return this.data.cta.action === 'scroll' ? this.data.cta.target : this.data.cta.target;
-  }
+  return this.data.cta.target;
+}
+
+get secondaryCtaHref(): string {
+  return this.data.secondaryCta.target;
+}
 }

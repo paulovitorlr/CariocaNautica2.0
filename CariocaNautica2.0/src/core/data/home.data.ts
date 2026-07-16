@@ -12,13 +12,21 @@ export const HERO_DATA: Hero = {
   headline: 'Design, qualidade e resistência para quem vive o mar.',
   subtitle:
     'Mais conforto para quem navega, mais valorização para sua embarcação e mais tranquilidade para aproveitar cada momento.',
-    image: 'assets/images/Aplicacoes1.jpeg',
-  imageAlt: 'imagem do mar',
+
+  image: 'assets/images/hero5.jpeg',
+  imageAlt: 'Imagem do mar',
+
   cta: {
     label: 'Venha fazer seu orçamento com a gente',
     action: 'scroll',
     target: '#contact',
   },
+
+  secondaryCta: {
+    label: 'Fale conosco pelo WhatsApp',
+    action: 'link',
+    target: 'https://wa.me/5521969252525',
+  }
 };
 
 export const NAVBAR_DATA: Navbar = {

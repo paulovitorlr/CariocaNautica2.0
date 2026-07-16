@@ -3,7 +3,12 @@
     <div class="hero__content">
       <h1>{{ data.headline }}</h1>
       <p class="hero__subtitle">{{ data.subtitle }}</p>
-      <a class="btn btn--large" [href]="ctaHref">{{ data.cta.label }}</a>
+      <a class="btn btn--large" [href]="ctaHref">
+        {{ data.cta.label }}
+      </a>
+      <a  class="btn wpp btn--large" [href]="secondaryCtaHref">
+        {{ data.secondaryCta.label }}
+      </a>
     </div>
     <div class="hero__media">
       <div class="placeholder-image" role="img" [attr.aria-label]="data.imageAlt">

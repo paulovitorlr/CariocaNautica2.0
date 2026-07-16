@@ -10,4 +10,5 @@ export interface Hero {
   image: string;
   imageAlt: string;
   cta: HeroCta;
+  secondaryCta: HeroCta;
 }

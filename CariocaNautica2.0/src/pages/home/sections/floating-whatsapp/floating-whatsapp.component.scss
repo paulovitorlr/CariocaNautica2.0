@@ -1,0 +1,39 @@
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  width: 64px;
+  height: 64px;
+
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  cursor: pointer;
+  z-index: 999;
+
+  display: none;
+
+  transition: transform .2s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+}
+
+@media (max-width: 767px) {
+  .floating-whatsapp {
+    display: block;
+  }
+}

@@ -8,6 +8,7 @@ import { ProblemsSolutionsSectionComponent } from './sections/problems-solutions
 import { ProcessSectionComponent } from './sections/process/process-section.component';
 import { SegmentsSectionComponent } from './sections/segments/segments-section.component';
 import { NavbarComponent } from './sections/navbar/navbar.component';
+import { FloatingWhatsappComponent } from './sections/floating-whatsapp/floating-whatsapp.component';
 
 
 @Component({
@@ -22,7 +23,8 @@ import { NavbarComponent } from './sections/navbar/navbar.component';
     ContactSectionComponent,
     FooterSectionComponent,
     SegmentsSectionComponent,
-    NavbarComponent
+    NavbarComponent,
+    FloatingWhatsappComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

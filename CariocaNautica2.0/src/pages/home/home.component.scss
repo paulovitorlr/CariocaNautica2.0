@@ -1,3 +1,13 @@
 .home {
   display: block;
+
+  .floating-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .floating-button {
+    display: flex;
+  }
+}
 }
